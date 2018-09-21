@@ -2,8 +2,10 @@
 
 Scaffold a React component for Create React App.
 
+**This is a fork that adds bug fixes to [rthor/cra-generate](https://github.com/rthor/cra-generate)**. To see what is added to this fork, [check out this diff](https://github.com/rthor/cra-generate/compare/master...jeremyckahn:master).
+
 ```bash
-Usage: cra-generate [options] <component>
+Usage: npx @jeremyckahn/cra-generate [options] <component>
 
 Options:
   -h, --help                       output usage information
