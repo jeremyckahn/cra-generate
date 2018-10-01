@@ -1,6 +1,6 @@
 {
   "name": "@jeremyckahn/cra-generate",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Scaffold react components",
   "main": "index.js",
   "repository": "jeremyckahn/cra-generate",
@@ -19,7 +19,10 @@
     "mkpath": "^1.0.0"
   },
   "lint-staged": {
-    "*.js": ["prettier", "git add"]
+    "*.js": [
+      "prettier",
+      "git add"
+    ]
   },
   "scripts": {
     "build": "flow-remove-types src/ -d lib/",
@@ -34,7 +37,14 @@
     },
     "rootDir": "src"
   },
-  "files": ["lib", "cli.js", "config.js", "templates", "src", "README.md"],
+  "files": [
+    "lib",
+    "cli.js",
+    "config.js",
+    "templates",
+    "src",
+    "README.md"
+  ],
   "devDependencies": {
     "flow-bin": "^0.46.0",
     "flow-remove-types": "^1.2.1",
