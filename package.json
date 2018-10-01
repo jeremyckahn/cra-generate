@@ -19,10 +19,7 @@
     "mkpath": "^1.0.0"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier",
-      "git add"
-    ]
+    "*.js": ["prettier", "git add"]
   },
   "scripts": {
     "build": "flow-remove-types src/ -d lib/",
@@ -37,9 +34,7 @@
     },
     "rootDir": "src"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib", "cli.js", "config.js", "templates", "src", "README.md"],
   "devDependencies": {
     "flow-bin": "^0.46.0",
     "flow-remove-types": "^1.2.1",
