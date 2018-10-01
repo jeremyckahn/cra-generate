@@ -1,6 +1,6 @@
 {
   "name": "@jeremyckahn/cra-generate",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "description": "Scaffold react components",
   "main": "index.js",
   "repository": "jeremyckahn/cra-generate",
