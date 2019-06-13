@@ -23,13 +23,23 @@ export { default } from './${fileName}'${semiColon}
       ? ""
       : `
 import React from 'react'${semiColon}
-import ReactDOM from 'react-dom'${semiColon}
 import ${componentName} from './${fileName}'${semiColon}
+import { shallow } from 'enzyme';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div')${semiColon}
-  ReactDOM.render(<${componentName} />, div)${semiColon}
-})${semiColon}
+let component;
+
+beforeEach(() => {
+  component = shallow(
+    <${componentName}
+      {...{
+      }}
+    />
+  );
+});
+
+test('renders', () => {
+  expect(component).toHaveLength(1);
+});
   `,
 
     [`${fileName}.js`]: isFunctional
