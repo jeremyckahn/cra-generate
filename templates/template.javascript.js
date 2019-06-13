@@ -11,7 +11,12 @@ module.exports = ({
   isFunctional,
 }) =>
   utils.createTemplate(componentPath, {
-    [`${fileName}.${cssExtension}`]: `
+    [`${fileName}.${cssExtension}`]:
+      cssExtension === "sass"
+        ? `
+.${componentName}
+    `
+        : `
 .${componentName} {}
   `,
 
