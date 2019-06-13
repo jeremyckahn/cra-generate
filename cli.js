@@ -33,7 +33,9 @@ try {
   const { files, componentName, componentPath } = generate(component, program)
   console.log(
     chalk.green(
-      `Generated ${chalk.cyan.bold(componentName)} at ${chalk.cyan(`./${path.relative(process.cwd(), componentPath)}`)}:`
+      `Generated ${chalk.cyan.bold(componentName)} at ${chalk.cyan(
+        `./${path.relative(process.cwd(), componentPath)}`
+      )}:`
     )
   )
   for (const file of files) {

@@ -25,7 +25,10 @@ function getComponentPath(
   const componentPath = path.join(dir, fileName)
   if (fs.existsSync(componentPath)) {
     throw new Error(
-      `Component ${componentName} already exists at ${`./${path.relative(process.cwd(), componentPath)}`}`
+      `Component ${componentName} already exists at ${`./${path.relative(
+        process.cwd(),
+        componentPath
+      )}`}`
     )
   }
 
