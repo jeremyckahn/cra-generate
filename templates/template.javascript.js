@@ -35,7 +35,7 @@ it('renders without crashing', () => {
     [`${fileName}.js`]: isFunctional
       ? `
 import React from 'react'${semiColon}
-import './${fileName}.css'${semiColon}
+import './${fileName}.${cssExtension}'${semiColon}
 
 const ${componentName} = ({}) => (
   <div className="${componentName}"></div>
@@ -46,7 +46,7 @@ export default ${componentName}${semiColon}
   `
       : `
 import React, { Component } from 'react'${semiColon}
-import './${fileName}.css'${semiColon}
+import './${fileName}.${cssExtension}'${semiColon}
 
 class ${componentName} extends Component {
   state = {}${semiColon}
