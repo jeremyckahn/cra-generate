@@ -28,8 +28,9 @@ export { default } from './${fileName}'${semiColon}
       ? ""
       : `
 import React from 'react'${semiColon}
-import ${componentName} from './${fileName}'${semiColon}
 import { shallow } from 'enzyme';
+
+import ${componentName} from './${fileName}'${semiColon}
 
 let component;
 
