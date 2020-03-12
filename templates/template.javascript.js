@@ -36,10 +36,7 @@ let component;
 
 beforeEach(() => {
   component = shallow(
-    <${componentName}
-      {...{
-      }}
-    />
+    <${componentName} {...{}} />
   );
 });
 
