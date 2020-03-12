@@ -48,11 +48,14 @@ test('renders', () => {
     [`${fileName}.js`]: isFunctional
       ? `
 import React from 'react'${semiColon}
+
 import './${fileName}.${cssExtension}'${semiColon}
 
-const ${componentName} = ({}) => (
+const ${componentName} = () => (
   <div className="${componentName}"></div>
 )${semiColon}
+
+${componentName}.propTypes = {}${semiColon}
 
 export default ${componentName}${semiColon}
 
