@@ -28,21 +28,21 @@ export { default } from './${fileName}'${semiColon}
       ? ""
       : `
 import React from 'react'${semiColon}
-import { shallow } from 'enzyme';
+import { shallow } from 'enzyme'${semiColon}
 
 import ${componentName} from './${fileName}'${semiColon}
 
-let component;
+let component${semiColon}
 
 beforeEach(() => {
   component = shallow(
     <${componentName} {...{}} />
-  );
-});
+  )${semiColon}
+})${semiColon}
 
 test('renders', () => {
-  expect(component).toHaveLength(1);
-});
+  expect(component).toHaveLength(1)${semiColon}
+})${semiColon}
   `,
 
     [`${fileName}.js`]: isFunctional
